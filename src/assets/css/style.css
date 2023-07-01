@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: black;
+}
+
+.navbar-brand:hover {
+    color: grey;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+#links:hover {
+    color: grey;
+}
+
+#links {
+    color: white;
+    text-decoration: none;
+    margin: 0.5rem;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
