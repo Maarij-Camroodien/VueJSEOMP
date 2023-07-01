@@ -1,7 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+body {
+    background-color: black;
+    color: white;
 }
 
 nav {
@@ -9,7 +20,7 @@ nav {
 }
 
 .navbar-brand:hover {
-    color: grey;
+    color: red;
 }
 
 .navbar-brand {
@@ -18,7 +29,7 @@ nav {
 }
 
 #links:hover {
-    color: grey;
+    color: red;
 }
 
 #links {
@@ -38,9 +49,15 @@ i {
 }
 
 .bi:hover {
-    color: grey;
+    color: red;
 }
 
 .bi {
     font-size: 1.5rem;
 }
+h2{
+    font-size: 72px;
+ 
+}
+
+/* #202124 */
