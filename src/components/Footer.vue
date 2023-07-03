@@ -1,9 +1,8 @@
 <template>
-    <div>
-        <footer class="sticky-footer">
-        <div class="info"> Call: +2782716507 <br/>
-            Email: maarijcamroodien18@gmail.com <br/>
-        &copy;M.C. Copyright 2023 <br/>
+    <div class="container">
+        <footer class="foot">
+        <div class="footer">
+          <div class="copyright">&copy;M.C. Copyright 2023</div>
         <div class="icons">
           <a href="https://www.instagram.com/maarij_camroodien/" target="_blank"><i class="bi bi-instagram"></i></a>
           <a href="https://github.com/Maarij-Camroodien" target="_blank"><i class="bi bi-github"></i></a>
@@ -21,6 +20,18 @@
 </script>
 
 <style scoped>
+footer {
+  height: 12vh;
+}
+
+.footer {
+  margin-top: 3rem;
+  border-top: solid 0.1rem white;
+}
+
+.copyright {
+  margin-top: 1rem;
+}
 
 
 </style>
