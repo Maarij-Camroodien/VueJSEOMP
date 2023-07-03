@@ -9,7 +9,7 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ms-auto">
         <router-link to="/" id="links">HOME</router-link>
-        <router-link to="/aboutandskills" id="links">ABOUT & SKILLS</router-link>
+        <router-link to="/about" id="links">ABOUT</router-link>
         <router-link to="/resume" id="links">RESUME</router-link>
         <router-link to="/projectsandtestimonials" id="links">PROJECTS & TESTIMNIALS</router-link>
         <router-link to="/contactme" id="links">CONTACT ME</router-link>
