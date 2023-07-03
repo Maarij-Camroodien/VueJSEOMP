@@ -2,7 +2,7 @@
     <div class="container">
         <footer class="foot">
         <div class="footer">
-          <div class="copyright">&copy;M.C. Copyright 2023</div>
+          <div class="copyright">&copy;MA'ARIJ CAMROODIEN Copyright 2023</div>
         <div class="icons">
           <a href="https://www.instagram.com/maarij_camroodien/" target="_blank"><i class="bi bi-instagram"></i></a>
           <a href="https://github.com/Maarij-Camroodien" target="_blank"><i class="bi bi-github"></i></a>
@@ -31,6 +31,7 @@ footer {
 
 .copyright {
   margin-top: 1rem;
+  
 }
 
 
