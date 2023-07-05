@@ -1,77 +1,60 @@
 <template>
-    <div></div>
-     <!-- v-for="education in education" :key="education.id"
-  <div id="carouselExampleCaptions" class="carousel slide">
-    <div class="carousel-indicators">
-      <button
-        type="button"
-        data-bs-target="#carouselExampleCaptions"
-        data-bs-slide-to="0"
-        class="active"
-        aria-current="true"
-        aria-label="Slide 1"
-      ></button>
-      <button
-        type="button"
-        data-bs-target="#carouselExampleCaptions"
-        data-bs-slide-to="1"
-        aria-label="Slide 2"
-      ></button>
-      <button
-        type="button"
-        data-bs-target="#carouselExampleCaptions"
-        data-bs-slide-to="2"
-        aria-label="Slide 3"
-      ></button>
+  <!-- <div class="container workandedu">
+    <div class="row my-3">
+      <h1>Work and Education</h1>
     </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="" alt="img" />
-        <div class="carousel-caption d-none d-md-block">
-          <h5>{{ education.headingone }}</h5>
-          <p>{{ education.contentone }}</p>
-          <h5>{{ education.headingtwo }}</h5>
-          <p>{{ education.contenttwo }}</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="" alt="img" />
-        <div class="carousel-caption d-none d-md-block">
-          <h5>{{ education.headingthree }}</h5>
-          <p>{{ education.contentthree }}</p>
-          <h5>{{ education.headingfour }}</h5>
-          <p>{{ education.contentfour }}</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="" alt="img" />
-        <div class="carousel-caption d-none d-md-block">
-          <h5>{{ education.headingfive }}</h5>
-          <p>{{ education.contentfive }}</p>
-          <h5>{{ education.headingsix }}</h5>
-          <p>{{ education.contentsix }}</p>
+    <div class="container cont">
+        <div class="col-xl-12 ">
+      <div class="row justify-content-center colum">
+          <div
+            class="card p-0 card-width"
+            id="testicard"
+            v-for="education in education"
+            :key="education.id"
+          >
+            <div class="image">
+              <img
+                :src="education.image"
+                loading="lazy"
+                id="testimg"
+                class="card-img-top"
+                :alt="education.headingone"
+              />
+            </div>
+            <div class="card-body">
+              <h4 class="card-text">
+                {{ education.headingone }}
+              </h4>
+              <p class="card-text">
+                {{ education.contentone  }}
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <button
-      class="carousel-control-prev"
-      type="button"
-      data-bs-target="#carouselExampleCaptions"
-      data-bs-slide="prev"
-    >
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button
-      class="carousel-control-next"
-      type="button"
-      data-bs-target="#carouselExampleCaptions"
-      data-bs-slide="next"
-    >
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div> -->
+<h1>WORK & EDUCATION</h1>
+<div class="d-flex justify-content-center" v-motion-pop>
+  <div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0" style="background-color: black; padding: 2rem; color: white;"
+            v-for="education in education"
+            :key="education.id">
+    <div class="col-md-4">
+      <img :src="education.image" class="img-fluid rounded-start" :alt="education.headingone">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title  text-white">{{ education.headingone }}</h5>
+        <p class="card-text  text-white">{{ education.contentone }}</p>
+        <h5 class="card-title  text-white">{{ education.headingtwo }}</h5>
+        <p class="card-text  text-white">{{ education.contenttwo }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
 </template>
 
 <script>
@@ -87,4 +70,11 @@ export default {
 };
 </script>
 <style scoped>
+p {
+  color: black;
+}
+.card {
+  margin: 1rem;
+}
+
 </style>

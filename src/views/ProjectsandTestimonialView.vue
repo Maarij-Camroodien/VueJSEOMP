@@ -1,7 +1,7 @@
 <template>
   <div class="projects">
     <div class="row my-3">
-      <h1>Projects</h1>
+      <h1>PROJECTS</h1>
     </div>
     <div class="container">
       <div class="row justify-content-center gap-3">
@@ -31,7 +31,7 @@
 
   <div class="container testimonials">
     <div class="row my-3">
-      <h1 class="testihead">Testimonials</h1>
+      <h1 class="testihead">TESTIMONIALS</h1>
     </div>
     <div class="container cont">
         <div class="col-xl-12 ">
