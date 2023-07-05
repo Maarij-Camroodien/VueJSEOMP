@@ -1,27 +1,27 @@
 <template>
 <h1>WORK & EDUCATION</h1>
 <div class="d-flex justify-content-center" v-motion-pop>
-  <div class="card mb-3" style="max-width: 540px;">
+  <div class="card mb-3" style="max-width: 1000px;">
   <div class="row g-0" style="background-color: black; padding: 2rem; color: white;"
             v-for="education in education"
             :key="education.id">
     <div class="col-md-4">
-      <img :src="education.image" class="img-fluid rounded-start" :alt="education.headingone">
+      <img :src="education.image" class="img-fluid rounded-start animate__animated animate__fadeInDown animate__delay-2s  2s" :alt="education.headingone">
     </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title  text-white">{{ education.headingone }}</h5>
-        <p class="card-text  text-white">{{ education.contentone }}</p>
-        <h5 class="card-title  text-white">{{ education.headingtwo }}</h5>
-        <p class="card-text  text-white">{{ education.contenttwo }}</p>
+    <div class="col-md-8 edu">
+      <div class="card-body educ">
+        <h3 class="card-title  text-white animate__animated animate__fadeInDown animate__delay-1s  1s">{{ education.headingone }}</h3>
+        <h5 class="card-text  text-white animate__animated animate__fadeInDown animate__delay-3s  3s">{{ education.contentone }}</h5>
+        <h3 class="card-title  text-white animate__animated animate__fadeInDown animate__delay-1s  1s">{{ education.headingtwo }}</h3>
+        <h5 class="card-text  text-white animate__animated animate__fadeInDown animate__delay-3s  3s">{{ education.contenttwo }}</h5>
       </div>
     </div>
   </div>
 </div>
 </div>
 
-<h1>SKILLS</h1>
-<div class="container">
+<h1 class="skillshead">SKILLS</h1>
+<div class="container" style="margin-bottom: 5rem;" v-motion-pop-visible>
       <div class="row justify-content-center gap-3">
         <div
           class="card-sk p-0"
@@ -63,6 +63,10 @@ export default {
 };
 </script>
 <style scoped>
+.skillshead {
+  margin-top: 5rem;
+}
+
 p {
   color: black;
 }
@@ -89,6 +93,21 @@ i:hover {
 i {
   font-size: 7rem;
   color: white;
+}
+
+.edu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* padding-top: 3rem; */
+}
+.educ{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  /* padding-top: 3rem; */
 }
 
 </style>
