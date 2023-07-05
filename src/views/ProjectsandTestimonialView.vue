@@ -3,7 +3,7 @@
     <div class="row my-3">
       <h1>PROJECTS</h1>
     </div>
-    <div class="container">
+    <div class="container" v-motion-pop>
       <div class="row justify-content-center gap-3">
         <div
           class="card p-0"
@@ -21,8 +21,8 @@
             <h4 class="card-text">
               {{ projects.name }}
             </h4>
-            <a :href="projects.github" target="_blank">Github Link</a>
-            <a :href="projects.netlify" target="_blank">Netlify Link</a>
+            <a :href="projects.github" target="_blank"><i class="bi bi-github"></i></a>
+            <a :href="projects.netlify" target="_blank"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
       </div>
@@ -33,7 +33,7 @@
     <div class="row my-3">
       <h1 class="testihead">TESTIMONIALS</h1>
     </div>
-    <div class="container cont">
+    <div class="container cont" v-motion-pop>
         <div class="col-xl-12 ">
       <div class="row justify-content-center colum">
           <div
@@ -82,6 +82,16 @@ export default {
 };
 </script>
 <style scoped>
+
+.bi:hover {
+  color: purple;
+}
+
+.bi {
+  color: black;
+  background-color: white;
+  font-size: 2rem;
+}
 
 .testimonials {
     border-top: solid 0.1rem white;
