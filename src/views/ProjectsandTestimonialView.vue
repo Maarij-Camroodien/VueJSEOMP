@@ -34,14 +34,14 @@
       <h1 class="testihead">TESTIMONIALS</h1>
     </div>
     <div class="container cont" v-motion-pop>
-        <div class="col-xl-12 ">
+        <div class="col-xl-12">
       <div class="row justify-content-center colum">
           <div
             class="card p-0 card-width"
             id="testicard"
             v-for="testimonials in testimonials"
             :key="testimonials.id"
-          >
+            >
             <div class="image">
               <img
                 :src="testimonials.image"

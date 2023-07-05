@@ -3,18 +3,43 @@
     <div class="card mb-3" style="max-width: 50rem;">
   <div class="row g-0">
     <div class="col-md-4">
-      <img src="https://i.postimg.cc/hvY27DC5/e2c147ed-0f95-4798-96a5-93863264d3a4.jpg" id="homeimg" class="img-fluid rounded-start" alt="img">
+      <img src="https://i.postimg.cc/hvY27DC5/e2c147ed-0f95-4798-96a5-93863264d3a4.jpg" id="homeimg" class="img-fluid rounded-start animate__animated animate__fadeInDown animate__delay-1s  1s" alt="img">
     </div>
     <div class="col-md-8">
       <div class="card-body">
-        <h1 id class="card-title">MA'ARIJ CAMROODIEN</h1>
-        <h1 id class="card-text">ASPIRING FULL-STACK DEVELOPER</h1>
-        <button class="letsbutton"><router-link to="/contact"></router-link>LET'S CONNECT</button>
+        <h1 class="card-title animate__animated animate__fadeInDown animate__delay-1s  1s">MA'ARIJ CAMROODIEN</h1>
+        <h1 class="card-text animate__animated animate__fadeInDown animate__delay-2s">ASPIRING FULL-STACK DEVELOPER</h1>
+        <button class="letsbutton animate__animated animate__fadeInDown animate__delay-3s  3s"><router-link to="/contact"></router-link>LET'S CONNECT</button>
       </div>
     </div>
   </div>
 </div>
   </div>
+
+  <!-- <h1 class="animate__animated animate__fadeInDown animate__delay-1s  1s display-5">MA'ARIJ CAMROODIEN</h1>
+  <h1 class="animate__animated animate__fadeInDown animate__delay-2s  2s">ASPIRING FULL-STACK DEVELOPER</h1> -->
+  <h1 class="abouthead">ABOUT ME</h1>
+  <div class="aboutsec d-flex justify-content-center">
+     <div class="card mb-3" style="max-width: 1200px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="https://i.postimg.cc/287CMJYy/img4.jpg" class="abtimg img-fluid" alt="logo">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h3 class="card-title text-white">Hi, I'm Ma'arij Camroodien</h3>
+        <h3 class="card-text text-white">
+          I'm 18 years old and I just finished matric with little to no coding experience. I've been working with computers
+          from the age of 13 and the more I worked with them I discoverd that I have a passion for computers and
+          decided to persue a career in Web-Development. In my free time I enjoy playing sports, watching anime
+          and spending time with my family and friends.
+        </h3>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+
 </template>
 
 <script>
@@ -26,9 +51,13 @@ export default {
 
 <style scoped>
 
+.abouthead {
+  margin-bottom: 2rem;
+}
+
 .cardho {
-  margin-top: 5rem;
-  margin-bottom: 6rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .card {
@@ -58,8 +87,13 @@ h1 {
   color: white;
 }
 
+.abtimg {
+  border-radius: 50%;
+  width: 15rem;
+}
 
-@media screen and (max-width: 900px) and (min-width: 481px) and (max-height: 1280px) {
+
+/* @media screen and (max-width: 900px) and (min-width: 481px) and (max-height: 1280px) {
   .cardho {
     margin-top: 15.1rem;
     margin-bottom: 15rem;
@@ -67,5 +101,5 @@ h1 {
   .card {
     display: inline-block;
   }
-}
+} */
 </style>
