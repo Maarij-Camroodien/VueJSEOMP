@@ -22,7 +22,7 @@ nav {
 }
 
 .navbar-brand:hover {
-    color: red;
+    color: purple;
 }
 
 .navbar-brand {
@@ -32,7 +32,7 @@ nav {
 }
 
 #links:hover {
-    color: red;
+    color: purple;
 }
 
 #links {
@@ -52,7 +52,7 @@ i {
 }
 
 .bi:hover {
-    color: red;
+    color: purple;
 }
 
 .bi {

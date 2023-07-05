@@ -36,7 +36,7 @@ export default {
 }
 
 .letsbutton:hover {
-  color: red;
+  color: purple;
   background-color: black;
 }
 
