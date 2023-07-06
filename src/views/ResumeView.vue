@@ -41,6 +41,7 @@
         </div>
       </div>
     </div>
+    <a href="https://drive.google.com/uc?export=download&id=1XUpG6mA4NC-IeHBANv1md_io-kSMFWKP" download><button class="downlaodbtn">Download CV</button></a>
 
 </template>
 
@@ -111,6 +112,22 @@ i {
   align-items: center;
   flex-direction: column; 
   /* padding-top: 3rem; */
+}
+
+.downlaodbtn:hover {
+  color: purple;
+  background-color: black;
+}
+
+.downlaodbtn {
+  color: black;
+  border: none;
+  border-radius: 0.3rem;
+  height: 2rem;
+  width: 8rem;
+  margin-top: 3rem;
+  font-weight: bold;
+  text-decoration: none; 
 }
 
 </style>
