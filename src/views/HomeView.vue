@@ -55,7 +55,7 @@
               I'm 19 years old and I just finished matric with little to no
               coding experience. I've been working with computers from the age
               of 13 and the more I worked with them I discoverd that I have a
-              passion for computers and decided to persue a career in
+              passion for coding and decided to persue a career in
               Web-Development. In my free time I enjoy playing sports, watching
               anime and spending time with my family and friends.
             </h5>
@@ -73,13 +73,21 @@ export default {
 </script>
 
 <style scoped>
+.card-title {
+  text-decoration: none;
+}
+
+.card-text {
+  text-decoration: none;
+}
+
 .abouthead {
   margin-bottom: 4rem;
 }
 
 .cardho {
   margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 
 .card {
