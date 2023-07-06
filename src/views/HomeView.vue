@@ -6,7 +6,7 @@
       <img src="https://i.postimg.cc/hvY27DC5/e2c147ed-0f95-4798-96a5-93863264d3a4.jpg" id="homeimg" class="img-fluid rounded-start animate__animated animate__fadeInDown animate__delay-1s  1s" alt="img">
     </div>
     <div class="col-md-8">
-      <div class="card-body">
+      <div class="card-body abt">
         <h1 class="card-title animate__animated animate__fadeInDown animate__delay-1s  1s">MA'ARIJ CAMROODIEN</h1>
         <h1 class="card-text animate__animated animate__fadeInDown animate__delay-2s">ASPIRING FULL-STACK DEVELOPER</h1>
         <button class="letsbutton animate__animated animate__fadeInDown animate__delay-3s  3s"><router-link to="/contact"></router-link>LET'S CONNECT</button>
@@ -27,13 +27,13 @@
     </div>
     <div class="col-md-8">
       <div class="card-body">
-        <h3 class="card-title text-white">Hi, I'm Ma'arij Camroodien</h3>
-        <h3 class="card-text text-white">
-          I'm 18 years old and I just finished matric with little to no coding experience. I've been working with computers
+        <h5 class="card-title text-white">Hi, I'm Ma'arij Camroodien</h5>
+        <h5 class="card-text text-white">
+          I'm 19 years old and I just finished matric with little to no coding experience. I've been working with computers
           from the age of 13 and the more I worked with them I discoverd that I have a passion for computers and
           decided to persue a career in Web-Development. In my free time I enjoy playing sports, watching anime
           and spending time with my family and friends.
-        </h3>
+        </h5>
       </div>
     </div>
   </div>
@@ -52,7 +52,7 @@ export default {
 <style scoped>
 
 .abouthead {
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .cardho {
@@ -90,6 +90,15 @@ h1 {
 .abtimg {
   border-radius: 50%;
   width: 15rem;
+}
+
+
+.abt{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* padding-top: 3rem; */
 }
 
 
