@@ -22,7 +22,7 @@
               {{ projects.name }}
             </h4>
             <a :href="projects.github" target="_blank"><i class="bi bi-github"></i></a>
-            <a :href="projects.netlify" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a :href="projects.netlify" target="_blank"><i id="linkded" class="bi bi-box-arrow-up-right"></i></a>
           </div>
         </div>
       </div>
@@ -91,6 +91,10 @@ export default {
   color: black;
   background-color: white;
   font-size: 2rem;
+}
+
+#linkded {
+  font-size: 1.8rem;
 }
 
 .testimonials {

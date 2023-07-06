@@ -8,8 +8,8 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/contact',
-    name: 'contact',
+    path: '/contactme',
+    name: 'contactme',
     component: () => import('../views/ContactView.vue')
   },
   {
