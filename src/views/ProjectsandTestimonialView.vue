@@ -5,7 +5,7 @@
     </div>
     <div class="container" v-motion-pop>
       <div class="row justify-content-center gap-3">
-        <div
+        <div id="cardss"
           class="card p-0"
           v-for="projects in projects"
           style="width: 20rem"
@@ -29,7 +29,7 @@
     </div>
   </div>
 
-  <div class="container testimonials">
+  <!-- <div class="container testimonials">
     <div class="row my-3">
       <h1 class="testihead">TESTIMONIALS</h1>
     </div>
@@ -63,6 +63,26 @@
         </div>
       </div>
     </div>
+  </div> -->
+
+  <h1 class="testihead">TESTIMONIALS</h1>
+  <div class="container d-flex justify-content-center">
+    <div id="testcard" class="card mb-3">
+  <div class="row g-0" id="testicard"
+            v-for="testimonials in testimonials"
+            :key="testimonials.id"
+            v-motion-fade-visible>
+    <div class="col-md-4">
+      <img :src="testimonials.image" class="img-fluid rounded-start" :alt="testimonials.name">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body testt h-100">
+        <h5 class="card-title">{{ testimonials.name }}</h5>
+        <p class="card-text">{{ testimonials.testi }}</p>
+      </div>
+    </div>
+  </div>
+</div>
   </div>
 </template>
 <script>
@@ -87,9 +107,60 @@ export default {
   color: purple;
 }
 
+
+/* .col-md-4{
+  display: flex;
+  justify-content: start;
+}
+
+.col-md-8{
+  width: 60%;
+} */
+
+#cardss:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+#cardss {
+  border-radius: 4px;
+  box-shadow: 0 6px 10px rgba(119, 34, 34, 0.08), 0 0 6px rgba(0,0,0,.05);
+  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  padding: 14px 80px 18px 36px;
+  cursor: pointer;
+}
+
+.card {
+  background-color: black;
+  border: 1px solid white;
+}
+
+.testihead {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+#testcard {
+  width: 80%;
+  border: none;
+  background-color: black;
+}
+
+#testicard {
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  color: white;
+}
+
+h5 {
+  color: white;
+}
+
 .bi {
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: black;
   font-size: 2rem;
 }
 
@@ -110,36 +181,40 @@ a {
   margin: 1rem;
   text-decoration: none;
 }
-
-img {
-  border: solid 1px black;
+.testt{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* padding-top: 3rem; */
 }
 
-#testimg {
+
+/* #testimg {
   border: none;
   height: 100%;
-}
+} */
 
-.cont {
+/* .cont {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
-.card-width {
+/* .card-width {
   width: 18rem;
   height: 53.5rem;
-}
+} */
 
 /* .card-body */
 
-.image {
+/* .image {
   width: 100%;
   height: 26rem;
 }
 .colum{
     display: flex;
     gap: 4rem;
-}
+} */
 </style>
