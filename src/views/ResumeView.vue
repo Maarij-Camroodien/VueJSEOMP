@@ -34,6 +34,9 @@
             <h4 class="car card-text">
               {{ skills.name }}
             </h4>
+            <h5 class="car card-text">
+              {{ skills.level }}
+            </h5>
           </div>
         </div>
       </div>
