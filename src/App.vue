@@ -1,6 +1,8 @@
 <template>
   <Navbar/>
-  <router-view/>
+  <main>
+    <router-view/>
+  </main>
   <Footer/>
 </template>
 
@@ -18,6 +20,9 @@ import Footer from '@/components/Footer.vue'
 
 <style>
 #app {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto minmax(100vh, 1fr) auto;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

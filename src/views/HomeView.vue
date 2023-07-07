@@ -1,6 +1,6 @@
 <template>
   <div
-    class="conatiner cardho d-flex justify-content-center align-items-center"
+    class="conatiner cardho d-flex justify-content-center align-items-center h-100"
   >
     <div class="card mb-3" style="max-width: 50rem">
       <div class="row g-0">
@@ -34,6 +34,7 @@
       </div>
     </div>
   </div>
+  
 
   <!-- <h1 class="animate__animated animate__fadeInDown animate__delay-1s  1s display-5">MA'ARIJ CAMROODIEN</h1>
   <h1 class="animate__animated animate__fadeInDown animate__delay-2s  2s">ASPIRING FULL-STACK DEVELOPER</h1> -->
@@ -57,11 +58,6 @@ export default {
 
 .abouthead {
   margin-bottom: 4rem;
-}
-
-.cardho {
-  margin-top: 3rem;
-  margin-bottom: 5rem;
 }
 
 .card {

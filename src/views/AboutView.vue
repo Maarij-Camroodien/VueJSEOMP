@@ -1,6 +1,6 @@
 <template>
     <h1 class="abouthead animate__animated animate__fadeInDown animate__delay-1s 1s">ABOUT ME</h1>
-  <div class="aboutsec d-flex justify-content-center">
+  <div class="aboutsec d-flex justify-content-center align-items-center h-100">
     <div class="card mb-3" style="max-width: 1200px">
       <div class="row g-0">
         <div class="col-md-4">
@@ -40,8 +40,30 @@
 }
 .abtimg {
   border-radius: 50%;
-  width: 15rem;
+  width: 17rem;
+  border: 7px solid #CAE9FF;
+  border-radius: 61% 39% 65% 35% / 38% 62% 38% 62%;
+  background-image: linear-gradient(45deg, #1B4965, #5FA8D3 100%);
+  background-position: top -10px center;
+  background-blend-mode: multiply;
+  animation: morph 8s ease-in-out infinite;
 }
+@keyframes morph {
+  0% {
+    border-radius: 43% 57% 30% 70% / 62% 32% 68% 38%;
+  }
+  50% {
+    border-radius: 17% 83% 20% 80% / 63% 22% 78% 37%;
+    background-image: linear-gradient(45deg, white, white 50%, white 90%);
+  }
+  75% {
+    border-radius: 29% 71% 44% 56% / 49% 50% 50% 51%;
+  }
+  100% {
+    border-radius: 43% 57% 30% 70% / 62% 32% 68% 38%;
+  }
+}
+  
 
 .abtt {
   display: flex;
@@ -50,6 +72,7 @@
   flex-direction: column;
   /* padding-top: 3rem; */
   height: 100%;
+  margin-top: 2rem;
 }
 .abot {
   display: flex;
@@ -58,10 +81,6 @@
   flex-direction: column;
   /* padding-top: 3rem; */
   height: 100%;
-}
-
-.aboutsec {
-  margin-bottom: 8rem;
 }
 
 </style>
