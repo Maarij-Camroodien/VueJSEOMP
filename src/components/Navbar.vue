@@ -12,7 +12,7 @@
         <router-link to="/about" id="links">ABOUT</router-link>
         <router-link to="/resume" id="links">RESUME</router-link>
         <router-link to="/projects" id="links">PROJECTS</router-link>
-        <router-link to="/testimonials" id="links">TESTIMNIALS</router-link>
+        <router-link to="/testimonials" id="links">TESTIMONIALS</router-link>
         <router-link to="/contactme" id="links">CONTACT ME</router-link>
       </div>
     </div>

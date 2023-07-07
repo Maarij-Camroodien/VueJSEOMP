@@ -23,6 +23,9 @@
             </h4>
             <a :href="projects.github" target="_blank"><i class="bi bi-github"></i></a>
             <a :href="projects.netlify" target="_blank"><i id="linkded" class="bi bi-box-arrow-up-right"></i></a>
+            <p class="card-text">
+              {{ projects.description }}
+            </p>
           </div>
         </div>
       </div>

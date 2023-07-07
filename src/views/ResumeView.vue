@@ -29,7 +29,7 @@
           style="width: 20rem"
           :key="skills.id"
         >
-        <i :class="skills.image" :style="{'i': skills.color}"></i>
+        <i :class="skills.image"></i>
           <div class="card-body">
             <h4 class="car card-text">
               {{ skills.name }}
@@ -37,6 +37,9 @@
             <h5 class="car card-text">
               {{ skills.level }}
             </h5>
+            <p class="car card-text">
+              {{ skills.description }}
+            </p>
           </div>
         </div>
       </div>
